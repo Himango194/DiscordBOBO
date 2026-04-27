@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 from discord import app_commands
 
@@ -368,5 +369,4 @@ async def on_ready():
     print("Bot Ready")
 
 
-import os
-bot.run("TOKEN")
+bot.run(os.getenv("TOKEN"))
